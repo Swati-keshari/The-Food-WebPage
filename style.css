@@ -1,0 +1,95 @@
+/* Utility classes */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hero section styling */
+.hero_image {
+    background: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero_wrapper {
+    text-align: center;
+    max-width: 80%;
+    font-size: 2.4em;
+    color: white;
+}
+
+.form_code {
+    margin-top: 1rem;
+}
+
+.post_code {
+    display: block;
+    width: 80%;
+    margin: 0.5rem auto;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    text-align: center;
+}
+
+.form_code button {
+    padding: 0.8em 1.5em;
+    border-radius: 1.5rem;
+    background-color: #ff7fcc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Product section styling */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.product_list_item {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.product__heading {
+    font-size: 1.5em;
+    margin-top: 1rem;
+}
+
+.product_list_item p {
+    font-size: 1em;
+    color: #333;
+    padding: 0 1rem;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 700px) {
+    .hero_image {
+        height: 70vh;
+        padding: 1em;
+    }
+
+    .hero_wrapper {
+        font-size: 1.5em;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_list_item {
+        width: 100%;
+    }
+}
